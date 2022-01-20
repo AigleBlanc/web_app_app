@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 class Register extends React.Component {
     render () {
@@ -16,7 +17,11 @@ class Register extends React.Component {
                                     <input type="text" name="lname" id="lname" placeholder="Last Name" required/> <span id="lname-msg" class="alert alert-danger"></span><br /><br />
                                     <input type="email" name="email" id="email" placeholder="Email" required/> <span id="email-msg" class="alert alert-danger"></span><br /><br /><br />
                                     <button type="reset" class="btn btn-secondary">Clear</button>
-                                    <button type="submit" id="submit" class="btn btn-primary">Register</button>
+                                    <button type="submit" id="submit" class="btn btn-primary">
+                                        <Link to="/pages/Okay">
+                                            <li>Register</li>  
+                                        </Link>
+                                    </button>
                                 </form>
                             </div>
                         </div>

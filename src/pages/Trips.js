@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 class Trips extends React.Component {
-    render() {
+    render() {        
         return(
             <div>
                 <section class="tm-registration-section">
@@ -9,7 +10,9 @@ class Trips extends React.Component {
                         <div class="tm-banner-inner">
                             <h1 class="tm-banner-title"><span class="tm-yellow-text">Thank You For Choosing US</span></h1>
                             <p class="tm-banner-subtitle">Login to view your Trips</p>
-                            <a href="#more" class="tm-banner-link">Login</a>	
+                            <a class="tm-banner-link">
+                                <a href="#more" class="tm-banner-link">Login</a>
+                            </a>
                         </div>	
                     </div> 
                 </section>
@@ -39,7 +42,9 @@ class Trips extends React.Component {
                                         </div>
                                         <div class="form-group">
                                             <button class="tm-submit-btn">
-                                                <a href="register.html">Don't have an account? Register Now!</a>
+                                                <Link to="/pages/Register">
+                                                    <li>Don't have an account yet? Register Now</li>  
+                                                </Link>     
                                             </button> 
                                         </div>
                                     </div>		      
@@ -78,7 +83,9 @@ class Trips extends React.Component {
                                         <textarea id="contact_message" class="form-control" rows="6" placeholder="MESSAGE"></textarea>
                                     </div>
                                     <div class="form-group">
-                                        <button class="tm-submit-btn" type="submit" name="submit">Submit now</button> 
+                                        <Link to="/pages/Okay">
+                                            <li>Submit now</li>  
+                                        </Link>
                                     </div>               
                                 </div>
                             </form>

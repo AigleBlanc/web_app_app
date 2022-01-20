@@ -14,13 +14,6 @@ a:focus {
 }
 
 /* Header & Nav */
-body { overflow-x: hidden; }
-.tm-header {
-	background: #000000;
-	height: 80px;
-	position: relative;
-	z-index: 100;
-}
 .tm-nav-container{
 	background: #000000;
 	height: 80px;
@@ -48,7 +41,6 @@ body { overflow-x: hidden; }
 	justify-content: space-around;
 	display: flex;
 	list-style: none;
-
 
 }
 
@@ -88,6 +80,95 @@ body { overflow-x: hidden; }
 	background: #FCDD44;
 	color: #000;
 }
+
+/* Base */
+.tm-base-function{
+	background-color: white;
+	height: 520px;
+	width: 100%;
+}
+
+.tm-base-picture{
+	padding-top: 2px;
+	margin-left: 520px;
+	height: 220px;
+	width: 300px;
+
+}
+
+.tm-base-title{
+	margin-top: 1px;
+	margin-left: 50px;
+	color: blue;
+	font-size: 5px;
+	text-align: center;
+	font-style: italic;
+}
+
+.tm-base-description{
+	margin-left: 150px;
+	text-align: left;
+	color: black;
+	height: auto;
+	font-size: 1px;
+	width: max-content;
+
+}
+.tm-base-price{
+	color: red;
+}
+.tm-base-dates{
+	padding-top: 5px;
+	margin-left: 520px;
+	width: 200px;
+}
+.tm-base-submit{
+	padding-top: 0px;
+	width: 200px;
+	margin-left: 520px;
+}
+/* Cart*/
+.tm-cart-picture{
+	padding-top: 2px;
+	margin-left: 520px;
+	height: 220px;
+	width: 300px;
+
+}
+
+.tm-cart-title{
+	margin-top: 1px;
+	margin-left: 50px;
+	color: blue;
+	font-size: 5px;
+	text-align: center;
+	font-style: italic;
+}
+
+.tm-cart-description{
+	margin-left: 150px;
+	text-align: left;
+	color: black;
+	height: auto;
+	font-size: 1px;
+	width: max-content;
+
+}
+.tm-cart-price{
+	color: red;
+	margin-left: 150px;
+	text-align: left;
+}
+.tm-cart-cancel{
+	padding-top: 0px;
+	width: 200px;
+	margin-left: 520px;
+}
+
+
+
+
+
 
 /* Banner */
 .tm-banner-inner {
@@ -519,13 +600,18 @@ hr { border-top: 1px solid #111010; }
 
 }
 
+.tm-banner-filter-hotels{
+	margin-top: 100px;
+	padding-left: 10px;
 
+}
 
 .tm-login-form{
 	margin-left: 0px;
 	height: 15px;
+	width: max-content;
 	text-align:left;
-	margin-top: 20px;	
+	margin-top: 10px;	
 }
 
 .tm-login-container .form-group {

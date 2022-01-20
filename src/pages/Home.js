@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 class Home extends React.Component{
     render() {
@@ -8,7 +9,11 @@ class Home extends React.Component{
                 <div class="tm-banner-inner">
                     <h1 class="tm-banner-title"> Find <span class="tm-yellow-text">Your Next </span> Home</h1>
                         <p class="tm-banner-subtitle">Get Instant 30% reduction on Regular prices on 7+ days stays</p>
-                    <a href="#more" class="tm-banner-link">Load Hotels</a>	
+                        <a class="tm-banner-link">
+                            <Link to="/pages/Hotels">
+                                <li>Load Hotels</li>  
+                            </Link>
+                        </a>
                 </div> 
             </section>
 
@@ -44,22 +49,12 @@ class Home extends React.Component{
                                                     </select> 
                                                 </div>
                                                 <div class="form-group">
-                                                    <div class='input-group date' id='datetimepicker1'>
-                                                        <input type='text' class="form-control" placeholder="Check-in Date" />
-                                                        <span class="input-group-addon">
-                                                            <span class="fa fa-calendar"></span>
-                                                        </span>
-                                                    </div>
+                                                    <input type="text" id="contact_subject" class="form-control" placeholder="Check-in Date (DD/MM/YY)" />
                                                 </div>
                                                 <div class="form-group">
-                                                    <div class='input-group date' id='datetimepicker2'>
-                                                        <input type='text' class="form-control" placeholder="Check-out Date" />
-                                                        <span class="input-group-addon">
-                                                            <span class="fa fa-calendar"></span>
-                                                        </span>
-                                                    </div>
+                                                    <input type="text" id="contact_subject" class="form-control" placeholder="Check-out Date (DD/MM/YY)" />
                                                 </div>								
-                                            <div class="form-group margin-bottom-0">
+                                                <div class="form-group margin-bottom-0">
                                                     <select class="form-control">
                                                         <option value="">-- Number of Rooms -- </option>
                                                         <option value="1">1</option>
@@ -71,7 +66,11 @@ class Home extends React.Component{
                                                 </div>
                                             </div>							
                                             <div class="form-group tm-yellow-gradient-bg text-center">
-                                                <button type="submit" name="submit" class="tm-yellow-btn">Check Now</button>
+                                                <a class="tm-yellow-btn">
+                                                    <Link to="/pages/Okay">
+                                                        <li>Book Now</li>  
+                                                    </Link>
+                                                </a>                                                
                                             </div>  
                                         </form>
                                     </div>
@@ -101,10 +100,6 @@ class Home extends React.Component{
                                 <img src="assets/img/ima009.jpg" alt="" class="img-responsive"/>
                                 <h3>Hotel 1, in Chennai</h3>
                                 <p class="tm-date">Rs 1500 per Night</p>
-                                <div class="tm-home-box-2-container">
-                                    <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-                                    <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description">Visit</span></a>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
@@ -112,10 +107,6 @@ class Home extends React.Component{
                                 <img src="assets/img/ima037.jpg"  alt="" class="img-responsive"/>
                                 <h3>Hotel 2, in Jaipur</h3>
                                 <p class="tm-date">Rs 2600 per Night</p>
-                                <div class="tm-home-box-2-container">
-                                    <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-                                    <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description">Visit</span></a>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
@@ -123,10 +114,6 @@ class Home extends React.Component{
                                 <img src="assets/img/ima001.jpg" alt=""  class="img-responsive"/>
                                 <h3>Hotel 3, in Noida</h3>
                                 <p class="tm-date">Rs 2600 per Night</p>
-                                <div class="tm-home-box-2-container">
-                                    <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-                                    <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description">Visit</span></a>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
@@ -134,10 +121,6 @@ class Home extends React.Component{
                                 <img src="assets/img/ima030.jpg"  alt="" class="img-responsive"/>
                                 <h3>Hotel 4, in Tiruchirappalli</h3>
                                 <p class="tm-date">Rs 2700 per Night</p>
-                                <div class="tm-home-box-2-container">
-                                    <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-                                    <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description">Visit</span></a>
-                                </div>
                             </div>
                         </div>
                     </div>			
@@ -150,8 +133,10 @@ class Home extends React.Component{
                         <div class="tm-section-header section-margin-top">
                             <div class="col-lg-4 col-md-3 col-sm-3"><hr/></div>
                             <div class="col-lg-4 col-md-6 col-sm-6"><h2 class="tm-section-title">Login to View Your Trips</h2>
-                                <a href="about.html" class="tm-login-redirect-link">Login</a></div>
-                            <div class="col-lg-4 col-md-3 col-sm-3"><hr/></div>
+                                <Link to="/pages/Trips">
+                                    <li>login</li>  
+                                </Link>   
+                            </div>
                         </div>
                     </div>		
                 </div>

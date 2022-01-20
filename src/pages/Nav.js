@@ -8,7 +8,7 @@ function Nav(){
                 <h3>EssoTravels</h3>
             </div>
             <ul  className='tm-nav-links'>
-            <Link to="/">
+                <Link to="/">
                     <li>Home</li>
                 </Link>
                 <Link to="/pages/Trips">
@@ -22,6 +22,12 @@ function Nav(){
                 </Link>
                 <Link to="/pages/Okay">
                     <li>Okay</li>
+                </Link>
+                <Link to="/pages/Base">
+                    <li>Base</li>
+                </Link>
+                <Link to="/pages/Cart">
+                    <li>Cart</li>
                 </Link>
             </ul>
         </nav>

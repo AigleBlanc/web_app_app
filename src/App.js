@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import Trips from './pages/Trips'
 import Register from './pages/Register'
 import Hotels from './pages/Hotels'
+import Base from './pages/Base'
+import Cart from './pages/Cart'
 
 function App() {
   return (
@@ -19,6 +21,10 @@ function App() {
           <Route path='/pages/Hotels' exact element={<Hotels />} />
           <Route path='/pages/Register' exact element={<Register />} />
           <Route path='/pages/Okay' exact element={<Okay />} />
+          <Route path='/pages/Base' exact element={<Base />} />
+          <Route path='/pages/Cart' exact element={<Cart />} />
+          ;
+          
         </Routes>
       </div>
     </Router>   
